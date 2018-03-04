@@ -1,0 +1,7 @@
+<!--pages/test/test.js.wxml-->
+<text>pages/test/test.js.wxml</text>
+<button bindtap='back'>返回</button>
+<aa wx:if="{{true}}">
+  <view>我是view1</view>
+  <view>我是view2</view>
+</aa>

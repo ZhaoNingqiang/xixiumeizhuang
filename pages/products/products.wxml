@@ -1,2 +1,3 @@
 <!--pages/products/products.wxml-->
 <text>pages/products/products.wxml</text>
+<view bindtap='toTest'>点击到test页面</view>
