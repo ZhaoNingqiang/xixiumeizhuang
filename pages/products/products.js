@@ -5,7 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    name:"赵先生",
+    arr:[1,2,3,4,5],
+    obj1:{
+      a:'我是一个A',
+      b:'我是个B'
+    }
   },
 
   toTest:function(){
