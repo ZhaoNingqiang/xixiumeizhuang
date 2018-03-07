@@ -1,0 +1,9 @@
+<!--pages/test/test.wxml-->
+<text>pages/test/test.wxml</text>
+<!-- <import src="a.wxml"/>
+<import src="b.wxml"/>
+<template is="aa" data="{{aaa:'template first'}}"/>
+
+<template is="b" data="{{bb:'他说b'}}"/> -->
+
+<view class='rpx'></view>

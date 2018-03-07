@@ -1,0 +1,29 @@
+/* pages/module/module.wxss */
+
+.flex-wrap {
+  display: -webkit-flex;
+  flex-direction: column;
+  height: 500rpx;
+}
+
+.flex-wrap view {
+  text-align: center;
+  font-size: 40rpx;
+  line-height: 200rpx;
+  color: white;
+}
+
+.a {
+  background-color: red;
+  flex: 1;
+}
+
+.b {
+  background-color: green;
+  flex: 1;
+}
+
+.c {
+  background-color: blue;
+  flex: 1;
+}

@@ -2,8 +2,10 @@
   "pages": [
     "pages/products/products",
     "pages/index/index",
-    "pages/logs/logs"
-    
+    "pages/logs/logs",
+    "pages/test/test",
+    "pages/module/module",
+    "pages/swiper/swiper"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -11,21 +13,28 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
-  "tabBar":{
-    "color":"#ccc",
-    "selectedColor":"black",
-    "list":[{
-      "pagePath":"pages/products/products",
-      "text":"产品",
-      "iconPath":"images/featured.png",
-      "selectedIconPath":"images/featured-actived.png"
-    },{
-      "pagePath": "pages/index/index",
-      "text": "活动",
-      "iconPath": "images/profile.png",
-      "selectedIconPath": "images/profile-actived.png"
-
-    }
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "black",
+    "list": [
+      {
+        "pagePath": "pages/products/products",
+        "text": "产品",
+        "iconPath": "images/featured.png",
+        "selectedIconPath": "images/featured-actived.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "活动",
+        "iconPath": "images/profile.png",
+        "selectedIconPath": "images/profile-actived.png"
+      },
+      {
+        "pagePath": "pages/swiper/swiper",
+        "text": "测试",
+        "iconPath": "images/search.png",
+        "selectedIconPath": "images/search-actived.png"
+      }
     ]
   }
 }
