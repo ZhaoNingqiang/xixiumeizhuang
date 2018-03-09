@@ -11,5 +11,7 @@ interval='2000'>
 </swiper-item>
 
 </swiper> -->
-<progress percent='80' show-info='true' stroke-width='20' color='red' active='true'/>
-<input placeholder='请输入用户名' value='jack' password='true'/>
+<progress percent='80' show-info='true' stroke-width='20' color='red' active='true' />
+<input placeholder='请输入用户名' value='jack' password='true' />
+<button size='mini' type='warn' plain='true' loading='true'>按钮</button>
+<picker ></picker>

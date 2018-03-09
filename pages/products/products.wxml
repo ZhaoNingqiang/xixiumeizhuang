@@ -1,2 +1,22 @@
 <!--pages/products/products.wxml-->
 <text>pages/products/products.wxml</text>
+<view bindtap='toTest'>点击到test页面</view>
+ <!-- <text hidden='{{false}}'>我是一个文本1 hidden = false</text>
+<text hidden='{{true}}'>我是一个文本2 hidden = true</text>
+<view hidden='{{false}}'>我是一个view1 hidden=false</view>
+<view hidden='{{true}}'>我是一个view2 hidden=true</view>  -->
+<!-- <view wx:for="{{arr}}">{{item}}</view> -->
+
+<!--定义一个模板  -->
+<template name="object">
+  <view>{{a}}</view>
+  <view>{{b}}</view>
+  <!-- <view>{{tempname}}</view> -->
+</template>
+<!--使用模板  -->
+<!-- <template is="object" data="{{a:1,b:2,tempname:name}}"> -->
+<template is="object" data="{{...obj1}}"/>
+<template is="object" data="{{...obj1,b:'jack'}}"/>
+
+
+

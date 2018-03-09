@@ -5,7 +5,8 @@
     "pages/logs/logs",
     "pages/test/test",
     "pages/module/module",
-    "pages/swiper/swiper"
+    "pages/swiper/swiper",
+    "pages/picker/picker"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -30,7 +31,7 @@
         "selectedIconPath": "images/profile-actived.png"
       },
       {
-        "pagePath": "pages/swiper/swiper",
+        "pagePath": "pages/picker/picker",
         "text": "测试",
         "iconPath": "images/search.png",
         "selectedIconPath": "images/search-actived.png"

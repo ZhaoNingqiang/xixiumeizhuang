@@ -1,4 +1,6 @@
-// pages/test/test.js
+
+// pages/test/test.js.js
+
 Page({
 
   /**
@@ -7,6 +9,11 @@ Page({
   data: {
   
   },
+
+
+back:function(){
+wx.navigateBack();
+},
 
   /**
    * 生命周期函数--监听页面加载

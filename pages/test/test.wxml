@@ -1,3 +1,4 @@
+
 <!--pages/test/test.wxml-->
 <text>pages/test/test.wxml</text>
 <!-- <import src="a.wxml"/>
@@ -7,3 +8,12 @@
 <template is="b" data="{{bb:'他说b'}}"/> -->
 
 <view class='rpx'></view>
+
+<!--pages/test/test.js.wxml-->
+<text>pages/test/test.js.wxml</text>
+<button bindtap='back'>返回</button>
+<aa wx:if="{{true}}">
+  <view>我是view1</view>
+  <view>我是view2</view>
+</aa>
+
