@@ -1,13 +1,33 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<!--pages/index/index.wxml-->
+<swiper indicator-dots='true' autoplay='true' circular='true'>
+  <swiper-item wx:for='{{banner}}'>
+    <navigator>
+      <image src='{{item}}' />
+    </navigator>
+  </swiper-item>
+</swiper>
+
+<view>组合优惠</view>
+
+<swiper display-multiple-items='2.4'>
+  <swiper-item wx:for='{{products}}'>
+    <navigator>
+      <view>
+        <image src='{{item}}' />
+      </view>
+    </navigator>
+  </swiper-item>
+</swiper>
+
+
+<view>精选商品</view>
+
+<scroll-view class='product-list'>
+<view>
+
+<view wx:for='{{products}}' class='product-item'>
+  <image src='{{item}}' class='product-poster' />
+
 </view>
+</view>
+</scroll-view>

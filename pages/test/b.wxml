@@ -1,3 +1,0 @@
-<template name="b">
-<text>我是B.wxml里面的文本{{bb}}</text>
-</template>

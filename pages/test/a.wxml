@@ -1,5 +1,0 @@
-<view>我是a.wxml</view>
-
-<template name="aa">
-  <text>我是a.wxml里面的文本{{aaa}}</text>
-</template>
