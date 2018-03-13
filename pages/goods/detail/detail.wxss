@@ -1,0 +1,68 @@
+/* pages/goods/detail/detail.wxss */
+
+.goods-detail-banner {
+  background-color: white;
+  height: 450rpx;
+}
+
+.goods-detail-banner-image {
+  width: 100%;
+  
+}
+
+.goods-detail-info-container{
+  padding: 20rpx;
+
+}
+
+.goods-detail-info{
+  margin-top: 10rpx;
+
+}
+.goods-detail-name {
+  font-size: 36rpx;
+  color: #333;
+}
+
+.goods-detail-price {
+  font-size: 32rpx;
+  color: red;
+}
+
+.goods-detail-pass-price {
+  margin-left: 12rpx;
+  font-size: 28rpx;
+  color: #888;
+  text-decoration: line-through;
+}
+
+.goods-detail-sold-num {
+  float: right;
+  font-size: 28rpx;
+  color: #333;
+}
+
+.divide{
+width: 100%;
+  background-color: #eeeeee;
+  height: 20rpx;
+}
+
+.goods-detail-introduce-container {
+  padding: 20rpx;
+  background-color: white;
+  flex-direction: column;
+  
+}
+
+.goods-detail-introduce-text {
+  font-size: 28rpx;
+  color: #888;
+  
+}
+
+.goods-detail-introduce-image {
+  background-color: beige;
+  width: 100%;
+  height: auto;
+}

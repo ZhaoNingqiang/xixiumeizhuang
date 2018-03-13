@@ -1,12 +1,14 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/profile/profile"
+      
+    "pages/goods/detail/detail",
+    "pages/profile/profile",
+    "pages/index/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
@@ -14,7 +16,7 @@
     "selectedColor": "black",
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/goods/detail/detail",
         "text": "首页",
         "iconPath": "images/featured.png",
         "selectedIconPath": "images/featured-actived.png"
