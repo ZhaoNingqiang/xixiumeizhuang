@@ -1,2 +1,5 @@
 <!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+<view class='about-cotainer'>
+<text class='about-desc'>我是一个微商</text>
+<image class='about-qr-code' mode='widthFix' src='../../images/qr_code.jpeg'></image>
+</view>

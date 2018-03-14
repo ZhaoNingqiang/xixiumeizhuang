@@ -1,9 +1,7 @@
 {
   "pages": [
-      
-    "pages/goods/detail/detail",
-    "pages/profile/profile",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/profile/profile"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -12,21 +10,26 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "color": "#ccc",
+    "backgroundColor": "#ffffff",
+    "color": "#aaa",
     "selectedColor": "black",
     "list": [
       {
-        "pagePath": "pages/goods/detail/detail",
+        "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath": "images/featured.png",
-        "selectedIconPath": "images/featured-actived.png"
+        "iconPath": "images/home.jpeg",
+        "selectedIconPath": "images/home_active.jpeg"
       },
       {
         "pagePath": "pages/profile/profile",
         "text": "关于",
-        "iconPath": "images/profile.png",
-        "selectedIconPath": "images/profile-actived.png"
+        "iconPath": "images/about.jpeg",
+        "selectedIconPath": "images/about_active.jpeg"
       }
     ]
   }
 }
+
+
+
+

@@ -1,32 +1,19 @@
 <!--pages/index/index.wxml-->
 <scroll-view class='product-list'>
   <swiper indicator-dots='true' autoplay='true' circular='true' class='banner'>
-    <swiper-item wx:for='{{banner}}'>
+    <swiper-item wx:for='{{home.banner}}'>
       <navigator>
         <image class='banner-image' src='{{item}}' />
       </navigator>
     </swiper-item>
   </swiper>
 
-  <view class='sub-title'>组合优惠</view>
+  <view class='sub-title'>{{home.activity.title}}</view>
 
-  <swiper display-multiple-items='2.4'>
-    <swiper-item wx:for='{{products}}'>
-      <navigator>
-        <view class='active-item'>
-          <image src='{{item}}' />
-        </view>
-      </navigator>
-    </swiper-item>
-  </swiper>
-
-
-  <view class='sub-title'>精选商品</view>
-
-  <view wx:for='{{products}}' class="{{index%2==0?'product-item odd':'product-item even'}}">
-    <image mode='aspectFit' lazy-load='true' src='{{item}}' class='product-poster' />
-    <text class='product-des'>标题这个是标题快快快口渴大标题这个是标题快快快口渴大标题这个是标题快快快口渴大标题这个是标题快快快口渴大</text>
-    <text class='product-price'>￥19.00</text>
+  <view wx:for='{{home.activity.list}}' class="{{index%2==0?'product-item odd':'product-item even'}}">
+    <image mode='aspectFill' lazy-load='true' src='{{item.poster}}' class='product-poster' />
+    <text class='product-des'>{{item.name}}</text>
+    <text class='product-price'>￥{{item.price}}</text>
 
   </view>
 </scroll-view>
