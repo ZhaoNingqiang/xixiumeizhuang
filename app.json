@@ -6,13 +6,14 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "",
+    "navigationBarTitleText": "溪秀美妆",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
+    "color": "#6b6b6b",
+    "selectedColor": "#EB716C",
+    "borderStyle": "black",
     "backgroundColor": "#ffffff",
-    "color": "#aaa",
-    "selectedColor": "black",
     "list": [
       {
         "pagePath": "pages/index/index",

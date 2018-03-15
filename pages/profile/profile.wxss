@@ -1,17 +1,29 @@
 /* pages/profile/profile.wxss */
+
 .about-cotainer {
-  padding: 80rpx;
+  padding: 40rpx 80rpx;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.about-desc{
-  color: #333333;
-  font-size: 28;
+
+.about-desc {
+  text-indent: 2em;
+  color: #333;
+  font-size: 28rpx;
 }
 
-.about-qr-code{
+.about-qr-code {
   margin-top: 20rpx;
   width: 90%;
   height: auto;
+}
+
+.copy-wx {
+  display: inline;
+  color: blue;
+}
+
+.aa {
+  display: inline;
 }
