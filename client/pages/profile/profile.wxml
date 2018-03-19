@@ -1,0 +1,10 @@
+<!--pages/profile/profile.wxml-->
+<view class='about-cotainer'>
+  <view bindtap='copy_wx'>
+    <text class='about-desc'>
+   大家好，我是滴滴，是一名90后创业者！溪秀是我发现的很靠谱的护肤品牌：\n①、市场制度严格，价格统一；\n②、产品安全，无铅汞，孕妇可用；\n③、产品适用人群广，男女老少通用；\n④、需求量大；\n⑤、产品质量有保证，有质检报告的护肤品，客户反馈好，改善皮肤暗黄，祛痘，补水，美白，是我们护肤的救星，让你增加自信！
+   首页的商品都是我家的，如果对我家商品感兴趣或者你也有意向成为溪秀代理，你可以通过扫描页面上的二维码，或则<text class='copy-wx' >点击这里复制我的微信</text>然后通过查找加我微信，滴滴随时欢迎您的咨询和加入。
+    </text>
+  </view>
+  <image class='about-qr-code' mode='widthFix' src='../../images/qr_code.jpeg' />
+</view>

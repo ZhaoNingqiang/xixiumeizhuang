@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/profile/profile"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "溪秀美妆",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#6b6b6b",
+    "selectedColor": "#EB716C",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.jpeg",
+        "selectedIconPath": "images/home_active.jpeg"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "关于",
+        "iconPath": "images/about.jpeg",
+        "selectedIconPath": "images/about_active.jpeg"
+      }
+    ]
+  }
+}
+
+
+
+
