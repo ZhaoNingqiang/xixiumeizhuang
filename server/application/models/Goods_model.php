@@ -13,9 +13,16 @@ class Goods_model extends CI_Model
         $this->load->database();
     }
 
-    public function get_goods()
+    public function get_goods($type)
     {
-        $query = $this->db->get('goods');
-        return $query->result_array();
+
+        $query = $this->db->get_where('goods', array('type' => $type));
+        return $query->row_array();
+    }
+
+
+    public function insert_goods($goods)
+    {
+        $this->db->insert('goods', $goods);
     }
 }

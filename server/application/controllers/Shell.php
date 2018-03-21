@@ -7,7 +7,10 @@
  */
 class Shell extends CI_Controller
 {
-   public function exec($command = 'ls'){
+    /**
+     * @param string $command
+     */
+    public function exec($command = 'ls'){
        echo $command.'<br>';
        exec($command,$ls);
        print_r(ls);

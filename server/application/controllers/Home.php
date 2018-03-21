@@ -15,13 +15,27 @@ class Home extends CI_Controller
         $this->load->model("goods_model");
     }
 
-    public function index(){
-        $goods = $this->goods_model->get_goods();
-        $this->json($goods);
+    public function index()
+    {
+        $goodses = $this->goods_model->get_goods('0');
+
+
+        $taocan = $this->goods_model->get_goods('1');
+
+
+
+        $this->json([
+            'goodses' => $goodses,
+            'taocan' => $taocan
+        ]);
+
+//        $goodses = $this->goods_model->get_goods('0');
+//        $this->json($goodses);
 
     }
 
-    public function json ($data) {
+    public function json($data)
+    {
         return $this->output
             ->set_content_type('application/json')
             ->set_output(
