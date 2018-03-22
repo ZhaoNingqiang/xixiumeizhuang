@@ -2,10 +2,11 @@
 /**
  * Created by PhpStorm.
  * User: Ningqiang.Zhao
- * Date: 2018/3/21
- * Time: 下午1:00
+ * Date: 2018/3/22
+ * Time: 下午2:15
+ * Class Goods 商品bean
  */
-
+defined('BASEPATH') OR exit('No direct script access allowed');
 class Goods
 {
     public $title;
@@ -36,7 +37,7 @@ class Goods
      * @param $class 1墨藻系列，2积雪草系列，3彩妆护肤
      * @param $type 0商品，1套餐
      */
-    public function __construct($title, $subTitle, $poster, $banner, $detailPoster, $curPrice, $passPrice, $count, $sold, $state, $class, $type=0)
+    public function __construct($title, $subTitle, $poster, $banner, $detailPoster, $curPrice, $passPrice, $count, $sold, $state, $class, $type = 0)
     {
         $this->title = $title;
         $this->subTitle = $subTitle;
@@ -52,39 +53,4 @@ class Goods
         $this->type = $type;
 
     }
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
