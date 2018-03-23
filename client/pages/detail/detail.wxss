@@ -1,0 +1,142 @@
+/* pages/goods/detail/detail.wxss */
+
+page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+swiper {
+  height: 800rpx;
+}
+
+swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+
+scroll-view {
+  margin-bottom: 100rpx;
+}
+
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  padding: 16rpx;
+}
+
+.detail-container .title {
+  font-size: 36rpx;
+  color: #333;
+  margin-bottom: 8rpx;
+}
+
+.detail-container .price {
+  font-size: 32rpx;
+  color: red;
+}
+
+.detail-container .pass-price {
+  margin-left: 12rpx;
+  font-size: 28rpx;
+  color: #888;
+  text-decoration: line-through;
+}
+
+.detail-container .sold {
+  float: right;
+  font-size: 28rpx;
+  color: #333;
+}
+
+.divide {
+  width: 100%;
+  background-color: #eee;
+  height: 20rpx;
+}
+
+.introduce-container {
+  padding: 20rpx;
+  background-color: white;
+  flex-direction: column;
+}
+
+.introduce-container .intro {
+  width: 100%;
+  height: auto;
+  margin-top: 20rpx;
+  margin-bottom: 30rpx;
+}
+
+.introduce-container .image {
+  width: 100%;
+  height: auto;
+}
+
+.detail-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  float: left;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100rpx;
+}
+
+.detail-nav .item {
+  display: -webkit-flex;
+  color: #333;
+  display: flex;
+  align-items: center;
+  width: 240rpx;
+  flex-direction: column;
+  font-size: 24rpx;
+}
+
+.detail-nav .count {
+  margin-left: 20rpx;
+  width: 32rpx;
+  height: 32rpx;
+  position: fixed;
+  color: white;
+  background-color: red;
+  line-height: 32rpx;
+  text-align: center;
+  font-size: 26rpx;
+  border-radius: 50%;
+}
+
+.detail-nav image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.detail-nav image-home {
+  width: 80rpx;
+  height: 80rpx;
+  margin: 40rpx;
+}
+
+button {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30rpx;
+  border-radius: 0rpx;
+  width: 50%;
+  height: 100%;
+  line-height: 100rpx;
+}
+
+.button-orange {
+  background-color: #ef833e; /* 橙色 */
+}
+
+.button-red {
+  background-color: #f44336; /* 红色 */
+}

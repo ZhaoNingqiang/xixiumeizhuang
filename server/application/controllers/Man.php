@@ -1,5 +1,5 @@
 <?php
-//defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') OR exit('No direct script access allowed');
 
 /**
  * Created by PhpStorm.
@@ -15,7 +15,6 @@
  *
  * DELETＥ FROM TableName
  */
-defined('BASEPATH') OR exit('No direct script access allowed');
 require_once(APPPATH . 'models/Goods.php');
 
 class Man extends CI_Controller
@@ -37,7 +36,7 @@ class Man extends CI_Controller
         $arr[0] = new Goods('溪秀修护面膜',
             '',
             $host . 'poster/xlh.jpeg',
-            json_encode([$host . 'detail_banner/jmzl_1.jpg', $host . 'detail_banner/jmzl_2.jpg']),
+            json_encode([$host . 'detail_banner/xlh_1.jpg', $host . 'detail_banner/xlh_2.jpg']),
             $host . 'detail/xlh.jpeg',
             68,
             68,
@@ -49,7 +48,7 @@ class Man extends CI_Controller
         $arr[1] = new Goods('溪秀植物精粹系列',
             '',
             $host . 'poster/sr.jpeg',
-            json_encode([$host . 'detail_banner/jmzl_1.jpg', $host . 'detail_banner/jmzl_2.jpg']),
+            json_encode([$host . 'detail_banner/sr_1.jpg', $host . 'detail_banner/sr_2.jpg']),
             $host . 'detail/sr.jpeg',
             128,
             128,
@@ -61,7 +60,7 @@ class Man extends CI_Controller
         $arr[2] = new Goods('溪秀冰感透肌舒缓面膜',
             '',
             $host . 'poster/cs.jpeg',
-            json_encode([$host . 'detail_banner/jmzl_1.jpg', $host . 'detail_banner/jmzl_2.jpg']),
+            json_encode([$host . 'detail_banner/cs_1.jpg', $host . 'detail_banner/cs_2.jpg']),
             $host . 'detail/cs.jpeg',
             68,
             68,
@@ -73,7 +72,7 @@ class Man extends CI_Controller
         $arr[3] = new Goods('溪秀植物精粹保湿霜',
             '',
             $host . 'poster/bss.jpeg',
-            json_encode([$host . 'detail_banner/jmzl_1.jpg', $host . 'detail_banner/jmzl_2.jpg']),
+            json_encode([$host . 'detail_banner/bss_1.jpg', $host . 'detail_banner/bss_2.jpg']),
             $host . 'detail/bss.jpeg',
             128,
             128,
@@ -85,7 +84,7 @@ class Man extends CI_Controller
         $arr[4] = new Goods('溪秀积雪草雪肌素颜霜',
             '',
             $host . 'poster/sys.jpeg',
-            json_encode([$host . 'detail_banner/jmzl_1.jpg', $host . 'detail_banner/jmzl_2.jpg']),
+            json_encode([$host . 'detail_banner/sys_1.jpg', $host . 'detail_banner/sys_2.jpg']),
             $host . 'detail/sys.jpeg',
             128,
             128,
@@ -110,7 +109,7 @@ class Man extends CI_Controller
         $arr[6] = new Goods('溪秀雪肌无暇气垫CC霜',
             '',
             $host . 'poster/ccs.jpeg',
-            json_encode([$host . 'detail_banner/jmzl_1.jpg', $host . 'detail_banner/jmzl_2.jpg']),
+            json_encode([$host . 'detail_banner/ccs_1.jpg']),
             $host . 'detail/ccs.jpeg',
             128,
             128,
@@ -122,7 +121,7 @@ class Man extends CI_Controller
         $arr[7] = new Goods('溪秀新品口红',
             '',
             $host . 'poster/kh.jpeg',
-            json_encode([$host . 'detail_banner/jmzl_1.jpg', $host . 'detail_banner/jmzl_2.jpg']),
+            json_encode([$host . 'detail_banner/kh_1.jpg', $host . 'detail_banner/kh_2.jpg']),
             $host . 'detail/kh.jpeg',
             128,
             128,
@@ -134,7 +133,7 @@ class Man extends CI_Controller
         $arr[8] = new Goods('溪秀茶麸无硅油洗护组合',
             '',
             $host . 'poster/xfs.jpeg',
-            json_encode([$host . 'detail_banner/jmzl_1.jpg', $host . 'detail_banner/jmzl_2.jpg']),
+            json_encode([$host . 'detail_banner/xfs_1.jpg', $host . 'detail_banner/xfs_2.jpg']),
             $host . 'detail/xfs.jpeg',
             156,
             156,
@@ -143,7 +142,7 @@ class Man extends CI_Controller
             0,
             3);
 
-
+//TODO
         $arr[9] = new Goods('溪秀墨藻亮肤精致精华液',
             '',
             $host . 'poster/mz_jhy.jpeg',
@@ -160,7 +159,7 @@ class Man extends CI_Controller
         $arr[10] = new Goods('溪秀墨藻亮肤精致面膜',
             '',
             $host . 'poster/mz_mm.jpeg',
-            json_encode([$host . 'detail_banner/jmzl_1.jpg', $host . 'detail_banner/jmzl_2.jpg']),
+            json_encode([$host . 'detail_banner/mz_mm_1.jpg', $host . 'detail_banner/mz_mm_2.jpg']),
             $host . 'detail/mz.jpeg',
             88,
             88,
@@ -172,7 +171,7 @@ class Man extends CI_Controller
         $arr[11] = new Goods('溪秀墨藻弹润美肌液',
             '',
             $host . 'poster/mz_mjy.jpeg',
-            json_encode([$host . 'detail_banner/jmzl_1.jpg', $host . 'detail_banner/jmzl_2.jpg']),
+            json_encode([$host . 'detail_banner/mz_mjy.jpg']),
             $host . 'detail/mz.jpeg',
             138,
             138,
@@ -181,6 +180,7 @@ class Man extends CI_Controller
             0,
             1);
 
+        //ToDO
         $arr[12] = new Goods('溪秀墨藻多效修护霜',
             '',
             $host . 'poster/mz_xhs.jpeg',
@@ -192,10 +192,10 @@ class Man extends CI_Controller
             22,
             0,
             1);
-
-        $arr[13] = new Goods('299元套餐',
+        //ToDO
+        $arr[13] = new Goods('199元套餐',
             '',
-            $host . 'poster/tc_299.jpeg',
+            $host . 'poster/tc199.jpeg',
             json_encode([$host . 'detail_banner/jmzl_1.jpg', $host . 'detail_banner/jmzl_2.jpg']),
             $host . 'detail/tc_299.jpeg',
             199,
@@ -205,12 +205,12 @@ class Man extends CI_Controller
             0,
             1,
             1);
-
-        $arr[14] = new Goods('199元套餐',
+        //ToDO
+        $arr[14] = new Goods('299元套餐',
             '',
-            $host . 'poster/tc_199.jpeg',
+            $host . 'poster/tc299.jpeg',
             json_encode([$host . 'detail_banner/jmzl_1.jpg', $host . 'detail_banner/jmzl_2.jpg']),
-            $host . 'detail/tc_199.jpeg',
+            $host . 'detail/tc_299.jpeg',
             299,
             299,
             120,
@@ -228,6 +228,7 @@ class Man extends CI_Controller
         echo 'ok';
 
     }
+
 
 }
 

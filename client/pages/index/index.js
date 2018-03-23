@@ -1,4 +1,7 @@
 // pages/index/index.js
+//var home_api = 'https://r0lrh1e2.qcloud.la/weapp/api/home';
+var home_api = 'https://334997638.xxmz.xyz/weapp/api/home';
+
 Page({
 
   /**
@@ -16,7 +19,7 @@ Page({
   onLoad: function (options) {
     var that = this;
     wx.request({
-      url: 'https://r0lrh1e2.qcloud.la/weapp/api/home',
+      url: home_api,
       data: {},
       header: {
         'Content-Type': 'application/json'

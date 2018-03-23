@@ -1,0 +1,44 @@
+<!--pages/goods/detail/detail.wxml-->
+
+<swiper autoplay='true' indicator-dots='true' circular='true'>
+  <swiper-item wx:for="{{goodsDeatil.banner}}">
+    <image src="{{item}}" data-src='{{item}}' />
+  </swiper-item>
+</swiper>
+<scroll-view scroll-y='true'>
+
+  <view class='detail-container'>
+    <text class='title'>{{goodsDeatil.title}}</text>
+    <view class='info'>
+      <text class='price'>￥{{goodsDeatil.curPrice}}</text>
+      <text class='pass-price'>￥{{goodsDeatil.passPrice}}</text>
+      <text class='sold'>已售{{goodsDeatil.sold}}</text>
+    </view>
+  </view>
+
+  <view class='divide' />
+
+
+  <view class='introduce-container'>
+    <image class='intro' src='../../images/intro_goods.jpg' mode='widthFix' />
+    <image class='image' mode='widthFix' src='{{goodsDeatil.detailPoster}}' />
+  </view>
+
+</scroll-view>
+
+<view class='detail-nav'>
+  <view class='item'>
+    <image bindtap="toCar" src="../../images/home.jpeg" />
+    <text>首页</text>
+  </view>
+  <view class='item'>
+    <text class='count'>1</text>
+    <image bindtap="addLike" src="../../images/about.jpeg" />
+    <text>购物车</text>
+  </view>
+
+
+  <button class="button-orange" bindtap="addCar" formType="submit">加入购物车</button>
+  <button class="button-red" bindtap="immeBuy" formType="submit">立即购买</button>
+
+</view>

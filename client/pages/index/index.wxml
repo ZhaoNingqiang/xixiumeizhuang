@@ -1,5 +1,5 @@
 <!--pages/index/index.wxml-->
-<scroll-view class='product-list'>
+<scroll-view>
   <swiper indicator-dots='true' autoplay='true' circular='true' class='banner'>
     <swiper-item wx:for='{{home.activites}}'>
       <navigator>
@@ -9,11 +9,21 @@
   </swiper>
 
   <view class='sub-title'>精选活动</view>
+  <navigator wx:for='{{home.goodses}}' url='../detail/detail?id={{item.id}}' class="{{index%2==0?'product-item odd':'product-item even'}}">
+    <view>
+      <image mode='aspectFill' lazy-load='true' src='{{item.poster}}' class='product-poster' />
+      <text class='product-des'>{{item.title}}</text>
+      <text class='product-price'>￥{{item.curPrice}}</text>
+    </view>
+  </navigator>
 
-  <view wx:for='{{home.goodses}}' class="{{index%2==0?'product-item odd':'product-item even'}}">
+  <view class='sub-title'>实惠套餐</view>
+
+  <view wx:for='{{home.taocan}}' class="{{index%2==0?'product-item odd':'product-item even'}}">
     <image mode='aspectFill' lazy-load='true' src='{{item.poster}}' class='product-poster' />
     <text class='product-des'>{{item.title}}</text>
     <text class='product-price'>￥{{item.curPrice}}</text>
-
   </view>
+
+
 </scroll-view>

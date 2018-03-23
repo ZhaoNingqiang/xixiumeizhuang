@@ -10,8 +10,7 @@
   box-sizing: border-box;
 }
 
-.product-list {
-}
+
 
 .product-item {
   padding-bottom: 10rpx;
