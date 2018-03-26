@@ -13,6 +13,7 @@ class Privilege extends CI_Controller
         parent::__construct();
         $this->load->load_admin();
         $this->load->helper('captcha');
+        $this->load->library('form_validation');
     }
 
     /**
@@ -23,18 +24,63 @@ class Privilege extends CI_Controller
         $this->load->view('login.html');
     }
 
+    public function signin()
+    {
+        //设置检验规则
+        $this->form_validation->set_rules('username', '用户名', 'required');
+        $this->form_validation->set_rules('password', '密码', 'required', array('required' => 'You must provide a %s.'));
+
+        $captcha = strtolower($this->input->post('captcha'));
+
+        $code = strtolower($this->session->userdata('code'));
+
+        if ($captcha === $code){
+            if($this->form_validation->run() == false){
+                $data['message'] = validation_errors();
+                $data['url'] = site_url('/admin/privilege/login');
+                $data['wait'] = 5;
+                $this->load->view('message.html',$data);
+            }else{
+                $username = $this->input->post('username');
+                $password = $this->input->post('password');
+                if ($username == 'admin' && $password == '123'){
+                    //ok save session info and jump to index page
+                    $this->session->set_userdata('admin',$username);
+                    redirect('admin/home');
+                }else{
+                    $data['message'] = '用户名或则密码错误，请重新登录！';
+                    $data['url'] = site_url('/admin/privilege/login');
+                    $data['wait'] = 5;
+                    $this->load->view('message.html',$data);
+                }
+            }
+
+        }else{//验证码不正确
+            $data['message'] = '验证码错误，请重试！';
+            $data['url'] = site_url('/admin/privilege/login');
+            $data['wait'] = 5;
+            $this->load->view('message.html',$data);
+        }
+    }
+
+    public function signout(){
+        $this->session->unset_userdata('admin');
+        $this->session->sess_destroy();
+        redirect('admin/privilege/login');
+    }
 
     /**
      * 生成验证码
      */
     public function code()
     {
-        $vars = array(
-            'img_path' => './data/captcha',
-            'img_url' => base_url() . '/data/captcha/'
+
+        $varl = array(
+            'word_length' => 4,
+            'font_size'	=> 50,
         );
-        $data = create_captcha($vars);
-        var_dump($data);
+        $code = create_captcha($varl);
+        $this->session->set_userdata('code', $code);
     }
 
 }

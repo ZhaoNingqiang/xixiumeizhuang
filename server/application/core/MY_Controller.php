@@ -13,6 +13,10 @@ class Admin_Controller extends CI_Controller
     {
         parent::__construct();
         $this->load->load_admin();
+
+        if (! $this->session->userdata('admin')){
+            redirect('admin/privilege/login');
+        }
     }
 
 }
