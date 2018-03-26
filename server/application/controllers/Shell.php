@@ -5,14 +5,20 @@
  * Date: 2018/3/20
  * Time: 下午5:37
  */
-class Shell extends CI_Controller
-{
-    /**
-     * @param string $command
-     */
-    public function exec($command = 'ls'){
-       echo $command.'<br>';
-       exec($command,$ls);
-       print_r(ls);
-   }
+$a = array('aa','bb','cc');
+
+$b = ['aa','bb','cc'];
+
+if ($a === $b){
+    echo 'a === b ';
 }
+
+if ($a == $b){
+    echo 'a == b ';
+}
+
+static $va = array();
+foreach ($a as $aitem){
+    $va[] = $aitem;
+}
+var_dump($va);

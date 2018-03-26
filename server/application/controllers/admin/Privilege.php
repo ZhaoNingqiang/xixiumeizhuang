@@ -1,4 +1,5 @@
 <?php
+defined('BASEPATH') OR exit('No direct script access allowed');
 /**
  * Created by PhpStorm.
  * User: znq
@@ -38,7 +39,7 @@ class Privilege extends CI_Controller
             if($this->form_validation->run() == false){
                 $data['message'] = validation_errors();
                 $data['url'] = site_url('/admin/privilege/login');
-                $data['wait'] = 5;
+                $data['wait'] = 3;
                 $this->load->view('message.html',$data);
             }else{
                 $username = $this->input->post('username');
@@ -50,7 +51,7 @@ class Privilege extends CI_Controller
                 }else{
                     $data['message'] = '用户名或则密码错误，请重新登录！';
                     $data['url'] = site_url('/admin/privilege/login');
-                    $data['wait'] = 5;
+                    $data['wait'] = 3;
                     $this->load->view('message.html',$data);
                 }
             }
@@ -58,7 +59,7 @@ class Privilege extends CI_Controller
         }else{//验证码不正确
             $data['message'] = '验证码错误，请重试！';
             $data['url'] = site_url('/admin/privilege/login');
-            $data['wait'] = 5;
+            $data['wait'] = 3;
             $this->load->view('message.html',$data);
         }
     }
