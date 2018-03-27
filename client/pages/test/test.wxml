@@ -1,0 +1,26 @@
+<!--pages/test/test.wxml-->
+<view class="{{true?'dialog-show':''}}">
+  <view class='dialog_mask' bindtap='toggleDialog' />
+  <view class='dialog_container'>
+
+
+    <view class='sku_info_container'>
+      <image class='image-close' bindtap='closeDialog' src='../../images/close.png'></image>
+      <image class="sku-image" src="http://mz.djmall.xmisp.cn/files/product/20161201/148057921620_middle.jpg"></image>
+      <view class="column">
+        <text class="sku-title">库存20件</text>
+        <text class="sku-price">￥500</text>
+
+
+      </view>
+    </view>
+
+    <view class='sku_count_container'>
+      <text class='sku-count'>数量：</text>
+      <text class='sku-stock'>库存：</text>
+    </view>
+
+    <view class='add-car'>加入购物车</view>
+
+  </view>
+</view>

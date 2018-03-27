@@ -7,6 +7,8 @@ Page({
    * 页面的初始数据
    */
   data: {
+    action: 'addCar',
+    showDialog: false,
     goodsDeatil: {}
 
   },
@@ -22,15 +24,63 @@ Page({
       data: {},
       header: { 'Content-Type': 'application/json' },
       method: 'GET',
-      success: function (res) { 
+      success: function (res) {
         that.setData({
-          goodsDeatil:res.data.data
+          goodsDeatil: res.data.data
         })
       },
-    
     })
-
   },
+
+  previewImage: function (e) {
+    console.log("e -- " + e)
+    var current = e.target.dataset.src;
+
+    wx.previewImage({
+      current: current,
+      urls: this.data.goodsDeatil.banner,
+    })
+  },
+
+  goHome: function () {
+    wx.switchTab({
+      url: '/pages/index/index',
+    })
+  },
+
+  goCar: function () {
+    wx.switchTab({
+      url: '/pages/car/car',
+    })
+  },
+
+  addCar: function () {
+    this.setData({
+      showDialog: true,
+      action: '加入购物车'
+    });
+  },
+
+
+  buyNow: function (res) {
+
+
+    this.setData({
+      showDialog: true,
+      action: '立即购买'
+    });
+  },
+
+  closeDialog: function () {
+    this.setData({
+      showDialog: false
+    });
+  },
+
+
+
+
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成

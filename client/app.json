@@ -1,8 +1,12 @@
 {
   "pages": [
+   
+  
     "pages/index/index",
     "pages/profile/profile",
-    "pages/detail/detail"
+    "pages/car/car",
+      "pages/detail/detail"
+   
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -30,8 +34,5 @@
       }
     ]
   }
+  
 }
-
-
-
-

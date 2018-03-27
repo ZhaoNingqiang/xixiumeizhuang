@@ -1,11 +1,11 @@
 <!--pages/goods/detail/detail.wxml-->
-
-<swiper autoplay='true' indicator-dots='true' circular='true'>
-  <swiper-item wx:for="{{goodsDeatil.banner}}">
-    <image src="{{item}}" data-src='{{item}}' />
-  </swiper-item>
-</swiper>
 <scroll-view scroll-y='true'>
+  <swiper autoplay='true' indicator-dots='true' circular='true'>
+    <swiper-item wx:for="{{goodsDeatil.banner}}">
+      <image src="{{item}}" data-src='{{item}}' bindtap='previewImage' />
+    </swiper-item>
+  </swiper>
+
 
   <view class='detail-container'>
     <text class='title'>{{goodsDeatil.title}}</text>
@@ -18,7 +18,6 @@
 
   <view class='divide' />
 
-
   <view class='introduce-container'>
     <image class='intro' src='../../images/intro_goods.jpg' mode='widthFix' />
     <image class='image' mode='widthFix' src='{{goodsDeatil.detailPoster}}' />
@@ -27,18 +26,43 @@
 </scroll-view>
 
 <view class='detail-nav'>
-  <view class='item'>
-    <image bindtap="toCar" src="../../images/home.jpeg" />
+  <view class='item' bindtap='goHome'>
+    <image src="../../images/home.jpeg" />
     <text>首页</text>
   </view>
-  <view class='item'>
+  <view class='item' bindtap='goCar'>
     <text class='count'>1</text>
-    <image bindtap="addLike" src="../../images/about.jpeg" />
+    <image src="../../images/about.jpeg" />
     <text>购物车</text>
   </view>
 
 
-  <button class="button-orange" bindtap="addCar" formType="submit">加入购物车</button>
-  <button class="button-red" bindtap="immeBuy" formType="submit">立即购买</button>
+  <view class="button-orange" bindtap="addCar" data='加入购物车'>加入购物车</view>
+  <view class="button-red" bindtap="buyNow">立即购买</view>
 
 </view>
+<!-- dialog start-->
+<view class="{{showDialog?'dialog-show':''}}">
+  <view class='dialog_mask' catchtap='closeDialog' catchtouchmove='' catchtouchstart='' catchtouchend='' />
+  <view class='dialog_container'>
+
+    <view class='sku_info_container'>
+      <image class='image-close' catchtap='closeDialog' src='../../images/close.png'></image>
+      <image class="sku-image" src='{{goodsDeatil.poster}}'></image>
+      <view class="column">
+        <text class="sku-title">{{goodsDeatil.title}}</text>
+        <text class="sku-price">￥{{goodsDeatil.curPrice}}</text>
+      </view>
+    </view>
+
+
+    <view class='sku_count_container'>
+      <text class='sku-count'>数量：{{quantity}}</text>
+      <text class='sku-stock'>库存：{{goodsDeatil.stock}}</text>
+    </view>
+
+    <view class="{{action == '加入购物车'?'add-car':'buy-now'}}">{{action}}</view>
+
+  </view>
+</view>
+<!-- dialog end -->

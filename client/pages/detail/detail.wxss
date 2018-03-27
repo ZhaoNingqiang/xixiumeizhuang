@@ -7,7 +7,7 @@ page {
 }
 
 swiper {
-  height: 800rpx;
+  height: 750rpx;
 }
 
 swiper-item image {
@@ -88,7 +88,6 @@ scroll-view {
 }
 
 .detail-nav .item {
-  display: -webkit-flex;
   color: #333;
   display: flex;
   align-items: center;
@@ -97,13 +96,12 @@ scroll-view {
   font-size: 24rpx;
 }
 
-.detail-nav .count {
-  margin-left: 20rpx;
+.count {
+  position: fixed;
   width: 32rpx;
   height: 32rpx;
-  position: fixed;
   color: white;
-  background-color: red;
+  background-color: #f44336;
   line-height: 32rpx;
   text-align: center;
   font-size: 26rpx;
@@ -121,22 +119,142 @@ scroll-view {
   margin: 40rpx;
 }
 
-button {
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 30rpx;
-  border-radius: 0rpx;
-  width: 50%;
-  height: 100%;
-  line-height: 100rpx;
-}
-
 .button-orange {
+  font-size: 32rpx;
+  line-height: 100rpx;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  color: white;
+  width: 50%;
+  text-align: center;
+  display: inline-block;
   background-color: #ef833e; /* 橙色 */
 }
 
 .button-red {
+  font-size: 32rpx;
+  line-height: 100rpx;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  color: white;
+  width: 50%;
+  text-align: center;
+  display: inline-block;
   background-color: #f44336; /* 红色 */
 }
+
+
+.dialog_mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.dialog_container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  transform: translateY(150%);
+  transition: all 0.4s ease;
+  z-index: 11;
+}
+
+.dialog-show .dialog_container {
+  transform: translateY(0);
+}
+
+.dialog-show .dialog_mask {
+  display: block;
+}
+
+.sku-image {
+  border: 1px solid #ddd;
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.image-close {
+  width: 32rpx;
+  height: 32rpx;
+  position: fixed;
+  right: 20rpx;
+  top: 20rpx;
+}
+
+.sku_info_container {
+  margin: 20rpx 40rpx 10rpx 20rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.sku_count_container {
+  margin: 0rpx 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sku-title {
+  color: #333;
+  position: relative;
+  left: 20rpx;
+  font-size: 32rpx;
+}
+
+.sku-price {
+  color: red;
+  position: relative;
+  margin-top: 16rpx;
+  left: 20rpx;
+  font-size: 40rpx;
+}
+
+.sku-count {
+  font-size: 34rpx;
+  color: #333;
+}
+
+.sku-stock {
+  position: absolute;
+  right: 20rpx;
+  font-size: 34rpx;
+  color: #333;
+}
+
+.add-car {
+  line-height: 100rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100rpx;
+  background: #ef833e;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.buy-now {
+  line-height: 100rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100rpx;
+  background: #f44336;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
