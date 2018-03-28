@@ -10,8 +10,6 @@
   box-sizing: border-box;
 }
 
-
-
 .product-item {
   padding-bottom: 10rpx;
   flex-direction: column;

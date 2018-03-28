@@ -1,5 +1,5 @@
 <!--pages/goods/detail/detail.wxml-->
-<scroll-view scroll-y='true'>
+<scroll-view scroll-y='false'>
   <swiper autoplay='true' indicator-dots='true' circular='true'>
     <swiper-item wx:for="{{goodsDeatil.banner}}">
       <image src="{{item}}" data-src='{{item}}' bindtap='previewImage' />

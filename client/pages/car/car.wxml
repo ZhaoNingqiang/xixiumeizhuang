@@ -1,2 +1,44 @@
 <!--pages/car/car.wxml-->
-<text>pages/car/car.wxml</text>
+<scroll-view scroll-y="true" class='scroll'>
+  <view class='header'>
+    <text class='text' data-name='{{editMode}}' catchtap='editToggle'>{{editMode}}</text>
+  </view>
+  <view wx:for="{{carts.cart}}">
+    <view class='cart_container'>
+      <image class="item-select" bindtap="switchSelect" data-index="{{index}}" data-id="{{index}}" src="{{item.isSelect?'../../images/select.png':'../../images/normal.png'}}" />
+      <image class="item-image" src="{{item.poster}}"></image>
+
+      <view class='des_container'>
+        <text class='title'>{{item.title}}</text>
+        <view class='column'>
+          <text class='sku-price'>￥{{item.curPrice}}</text>
+          <text class='sku-count'>x{{item.count}}</text>
+        </view>
+      </view>
+
+
+
+      <view class='suv-edit'>
+        <text>123</text>
+        <view>删除</view>
+      </view>
+    </view>
+
+
+  </view>
+</scroll-view>
+
+<view class='bottom_total'>
+
+
+  <view class='row'>
+
+    <image class="item-allselect" bindtap="allSelect" src="{{isAllSelect?'../../images/select.png':'../../images/normal.png'}}" />
+    <text class="small_text">全选</text>
+    <text>合计:</text>
+    <text class="price">￥{{carts.totalMoney}}</text>
+    <button class="button-red" bindtap="toBuy" formType="submit">去结算</button>
+
+  </view>
+
+</view>

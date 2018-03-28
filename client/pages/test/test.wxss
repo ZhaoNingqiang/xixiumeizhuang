@@ -1,101 +1,60 @@
 /* pages/test/test.wxss */
 
-.dialog_mask {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-  background: rgba(0, 0, 0, 0.7);
-  display: none;
-}
-
-.dialog_container {
-  position: fixed;
-  bottom: 0;
+.cart {
   width: 100%;
-  background: white;
-  transform: translateY(150%);
-  transition: all 0.4s ease;
-  z-index: 11;
+  height: 260rpx;
+  background: #999;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.dialog-show .dialog_container {
-  transform: translateY(0);
+.select {
+  width: 60rpx;
+  height: 60rpx;
 }
 
-.dialog-show .dialog_mask {
-  display: block;
+.poster {
+  background: red;
+  width: 160rpx;
+  height: 160rpx;
 }
 
-.sku-image {
-  border: 1px solid #ddd;
-  width: 200rpx;
-  height: 200rpx;
+.sku_edit_container {
+  width: 0rpx;
+  flex-grow: 1;
+  height: 100%;
+  background: #ccc;
 }
 
-.image-close {
-  width: 32rpx;
-  height: 32rpx;
-  position: fixed;
-  right: 20rpx;
-  top: 20rpx;
-}
-
-.sku_info_container {
-  margin: 20rpx 40rpx 10rpx 20rpx;
+.sku_title_container {
+  height: 100%;
+  background: #0ff;
   display: flex;
   flex-direction: row;
 }
 
 .column {
+  position: absolute;
+  right: 30rpx;
   display: flex;
   flex-direction: column;
 }
 
-.sku_count_container {
-  margin: 0rpx 20rpx;
+.title {
+  justify-content: flex-start;
+  align-self: flex-start;
+}
+
+.suv_edit_container {
+  visibility: visible;
+  top: 0rpx;
+  height: 260rpx;
+  z-index: 2;
+  position: absolute;
   display: flex;
   flex-direction: row;
-  align-items: center;
-}
-
-.sku-title {
-  color: #333;
-  position: relative;
-  left: 20rpx;
-  font-size: 32rpx;
-}
-
-.sku-price {
-  color: red;
-  position: relative;
-  margin-top: 16rpx;
-  left: 20rpx;
-  font-size: 40rpx;
-}
-
-.sku-count {
-  font-size: 34rpx;
-  color: #333;
-}
-
-.sku-stock {
-  position: absolute;
-  right: 20rpx;
-  font-size: 34rpx;
-  color: #333;
-}
-
-.add-car {
-  line-height: 100rpx;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100rpx;
-  background: #ef833e;
-  color: white;
+  background: #ff0;
   width: 100%;
-  text-align: center;
 }
