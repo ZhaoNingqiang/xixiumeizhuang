@@ -1,5 +1,7 @@
 <!--pages/test/test.wxml-->
-<view class='cart'>
+
+
+<view wx:for="{{a}}" class='cart'>
 
   <image class="select" bindtap="switchSelect" data-index="{{index}}" data-id="{{index}}" src="{{item.isSelect?'../../images/select.png':'../../images/normal.png'}}" />
 
@@ -7,8 +9,7 @@
 
   <view class='sku_edit_container'>
 
-
-    <view class='sku_title_container'>
+    <view class='container1'>
       <text class='title'>tite</text>
       <view class='column'>
         <text class='sku-price'>123</text>
@@ -16,15 +17,10 @@
       </view>
     </view>
 
-
-
-    <view class='suv_edit_container'>
-      <text>123</text>
+    <view class='container2'>
+      <text class='edit_count'>999</text>
       <view>删除</view>
-    </view> 
-
-
-
+    </view>
   </view>
 
 </view>

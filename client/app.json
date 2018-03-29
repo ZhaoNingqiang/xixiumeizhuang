@@ -1,12 +1,14 @@
 {
   "pages": [
-    "pages/test/test",
+   
+   "pages/test/test",
     "pages/car/car",
    
    
     "pages/index/index",
     "pages/profile/profile",
     "pages/detail/detail"
+    
    
   ],
   "window": {

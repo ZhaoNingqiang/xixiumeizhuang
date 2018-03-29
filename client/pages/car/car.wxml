@@ -8,20 +8,12 @@
       <image class="item-select" bindtap="switchSelect" data-index="{{index}}" data-id="{{index}}" src="{{item.isSelect?'../../images/select.png':'../../images/normal.png'}}" />
       <image class="item-image" src="{{item.poster}}"></image>
 
-      <view class='des_container'>
-        <text class='title'>{{item.title}}</text>
-        <view class='column'>
-          <text class='sku-price'>￥{{item.curPrice}}</text>
-          <text class='sku-count'>x{{item.count}}</text>
-        </view>
+      <text class='title'>{{item.title}}</text>
+      <view class='column'>
+        <text class='sku-price'>￥{{item.curPrice}}</text>
+        <text class='sku-count'>x{{item.count}}</text>
       </view>
 
-
-
-      <view class='suv-edit'>
-        <text>123</text>
-        <view>删除</view>
-      </view>
     </view>
 
 
