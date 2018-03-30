@@ -1,25 +1,31 @@
 <!--pages/test/test.wxml-->
 
 
-<view wx:for="{{a}}" class='cart'>
+<view wx:for="{{carts.cart}}" class='cart'>
 
   <image class="select" bindtap="switchSelect" data-index="{{index}}" data-id="{{index}}" src="{{item.isSelect?'../../images/select.png':'../../images/normal.png'}}" />
 
   <image class="poster" src="{{item.poster}}"></image>
 
-  <view class='sku_edit_container'>
+  <view class='edit_container'>
 
-    <view class='container1'>
+    <view class='container_1'>
       <text class='title'>tite</text>
       <view class='column'>
-        <text class='sku-price'>123</text>
-        <text class='sku-quantity'>333</text>
+        <text class='sku-price'>￥</text>
+        <text class='sku-quantity'>x</text>
       </view>
     </view>
 
-    <view class='container2'>
-      <text class='edit_count'>999</text>
-      <view>删除</view>
+    <view class='container_2'>
+
+      <view class='quantity'>
+        <view>+</view>
+        <text>999</text>
+        <view>-</view>
+      </view>
+
+      <view class='edit_delete'>删除</view>
     </view>
   </view>
 

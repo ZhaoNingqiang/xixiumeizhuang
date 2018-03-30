@@ -10,57 +10,94 @@ Page({
         {
           goodsId:2,
           title: '我是吓死你 的那点事的的速度v的是的v是是虫弄着呢你自己你在内的',
-          poster: 'https://xixiu-1256206862.cos.ap-beijing.myqcloud.com/banner/zmdn.jpg',
+          poster: 'https://xixiu-1256206862.cos.ap-beijing.myqcloud.com/poster/sys.jpeg',
           curPrice: 12,
           isSelect: false,
-          count: 1,
+          quantity:2,
+          stock: 1
+         
 
         },
         {
           goodsId: 2,
-          title: 'title',
-          poster: 'https://xixiu-1256206862.cos.ap-beijing.myqcloud.com/banner/zmdn.jpg',
+          title: '我是吓死你 的那点事的的速度v的是的v是是虫弄着呢你自己你在内的',
+          poster: ' https://xixiu-1256206862.cos.ap-beijing.myqcloud.com/poster/jmzl.jpeg',
           curPrice: 12,
           isSelect: false,
-          count: 1,
+          quantity: 2,
+          stock: 1
 
         },
         {
           goodsId: 2,
-          title: 'title',
-          poster: 'https://xixiu-1256206862.cos.ap-beijing.myqcloud.com/banner/zmdn.jpg',
+          title: '我是吓死你 的那点事的的速度v的是的v是是虫弄着呢你自己你在内的',
+          poster: ' https://xixiu-1256206862.cos.ap-beijing.myqcloud.com/poster/jmzl.jpeg',
           curPrice: 12,
           isSelect: false,
-          count: 1,
+          quantity: 2,
+          stock: 1
 
         },
         {
           goodsId: 2,
-          title: 'title',
-          poster: 'https://xixiu-1256206862.cos.ap-beijing.myqcloud.com/banner/zmdn.jpg',
+          title: '我是吓死你 的那点事的的速度v的是的v是是虫弄着呢你自己你在内的',
+          poster: ' https://xixiu-1256206862.cos.ap-beijing.myqcloud.com/poster/jmzl.jpeg',
           curPrice: 12,
           isSelect: false,
-          count: 1,
+          quantity: 2,
+          stock: 1
 
         },
         {
           goodsId: 2,
-          title: 'title',
-          poster: 'https://xixiu-1256206862.cos.ap-beijing.myqcloud.com/banner/zmdn.jpg',
+          title: '我是吓死你 的那点事的的速度v的是的v是是虫弄着呢你自己你在内的',
+          poster: ' https://xixiu-1256206862.cos.ap-beijing.myqcloud.com/poster/jmzl.jpeg',
           curPrice: 12,
           isSelect: false,
-          count: 1,
+          quantity: 2,
+          stock: 1
 
         },
         {
-          goodsId:3,
-          title: 'title2',
-          poster: 'https://xixiu-1256206862.cos.ap-beijing.myqcloud.com/banner/zmdn.jpg',
+          goodsId: 2,
+          title: '我是吓死你 的那点事的的速度v的是的v是是虫弄着呢你自己你在内的',
+          poster: ' https://xixiu-1256206862.cos.ap-beijing.myqcloud.com/poster/jmzl.jpeg',
           curPrice: 12,
-          isSelect: true,
-          count: 1,
+          isSelect: false,
+          quantity: 2,
+          stock: 1
 
-        }
+        },
+        {
+          goodsId: 2,
+          title: '我是吓死你 的那点事的的速度v的是的v是是虫弄着呢你自己你在内的',
+          poster: ' https://xixiu-1256206862.cos.ap-beijing.myqcloud.com/poster/jmzl.jpeg',
+          curPrice: 12,
+          isSelect: false,
+          quantity: 2,
+          stock: 1
+
+        },
+        {
+          goodsId: 2,
+          title: '我是吓死你 的那点事的的速度v的是的v是是虫弄着呢你自己你在内的',
+          poster: ' https://xixiu-1256206862.cos.ap-beijing.myqcloud.com/poster/jmzl.jpeg',
+          curPrice: 12,
+          isSelect: false,
+          quantity: 2,
+          stock: 1
+
+        },
+        {
+          goodsId: 2,
+          title: '我是吓死你 的那点事的的速度v的是的v是是虫弄着呢你自己你在内的',
+          poster: ' https://xixiu-1256206862.cos.ap-beijing.myqcloud.com/poster/jmzl.jpeg',
+          curPrice: 12,
+          isSelect: false,
+          quantity: 2,
+          stock: 1
+
+        },
       ],
       postage:6,
       totalMoney: 100
