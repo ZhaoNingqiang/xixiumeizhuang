@@ -32,4 +32,20 @@ class Category_model extends CI_Model
         return $tree;
     }
 
+    public function add_category($data)
+    {
+        return $this->db->insert(self::TAB_CATE, $data);
+    }
+
+    public function get_cate($cat_id)
+    {
+        $condition['cat_id'] = $cat_id;
+        return $this->db->get_where(self::TAB_CATE, $condition)->row_array();
+    }
+
+    public function update_cate($cat_id,$data){
+        $condition['cat_id'] = $cat_id;
+        return $this->db->where($condition)->update(self::TAB_CATE,$data);
+    }
+
 }
